@@ -45,9 +45,10 @@ body{
 }
 
 .board{
+    
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem;
-    grid-template-rows: 5rem 5rem 5rem;
+    grid-template-columns: repeat(3, minmax(5rem, 10vw));
+    grid-template-rows: repeat(3, minmax(5rem, 10vw));
 }
 
 button:disabled{
@@ -105,7 +106,7 @@ button:disabled{
 .item{
     border: 0.1rem solid var(--color1);
     background-color: var(--color4);
-    font-size: 2rem;
+    font-size: 5rem;
     text-align: center;
     display: flex;
     align-items: center;
