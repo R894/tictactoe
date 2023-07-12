@@ -22,6 +22,12 @@ body{
     margin: 0;
 }
 
+.wrapper button{
+    color: var(--color4);
+    padding: 0.5rem 1rem;
+    background-color: var(--color1);
+}
+
 .wrapper{
     
     display: flex;
@@ -58,6 +64,7 @@ button:disabled{
 #start-form{
     position: fixed;
     display: flex;
+    font-size: 2rem;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.1);
@@ -67,6 +74,13 @@ button:disabled{
     justify-content: center;
     align-items: center;
     gap:0.5rem;
+}
+#start-form input{
+    scale: 1.5;
+}
+
+#start-form button{
+    margin-top: 1rem;
 }
 
 .content{
@@ -120,6 +134,7 @@ button:disabled{
 button{
     background-color: var(--color4);
     font-size: 1.1rem;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     border: none;
 }
