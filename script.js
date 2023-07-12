@@ -92,9 +92,26 @@ const GameBoard = (() => {
         startGame
     };
 
+})();
+
+const displayController = ((gb) => {
+    let form = document.getElementById("start-form");
+    let formButton = document.querySelector("[type='submit']");
+    let player1 = document.getElementById("player1");
+    let player2 = document.getElementById("player2");
+    let content = document.querySelector(".content");
+
+    form.addEventListener("submit", function (e){
+        e.preventDefault();
+        gb.setPlayerOne(player1.value);
+        gb.setPlayerTwo(player2.value);
+        form.style.display = "none";
+        content.style.display = "block";
+    });
 });
 
-let n =  GameBoard();
-n.setPlayerOne('Steve');
-n.setPlayerTwo('Jason');
+
+
+let n =  GameBoard;
+displayController(n);
 n.startGame();
