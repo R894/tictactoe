@@ -1,9 +1,46 @@
+:root{
+    --font-color: #303841;
+    --color1: #303841;
+    --color2: #3a4750;
+    --color3: #d33b4f;
+    --color4: #d3d6db;
+    font-family: 'Roboto', sans-serif;
+}
+
 html{
     height: 100vh;
     width: auto;
+    color: var(--color4);
+}
+
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color2);
+    margin: 0;
+}
+
+.wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color4);
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--color4);
+    width: 100vw;
+    background-color: var(--color1);
     font-size: 2rem;
 }
 
@@ -13,8 +50,11 @@ html{
     grid-template-rows: 5rem 5rem 5rem;
 }
 
-#start-form{
+button:disabled{
+    color:var(--color3);
+}
 
+#start-form{
     position: fixed;
     display: flex;
     top: 0;
@@ -29,7 +69,12 @@ html{
 }
 
 .content{
+    margin: 2rem;
+    gap: 1rem;
     display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup-container {
@@ -48,6 +93,7 @@ html{
 }
 
 .popup {
+    color: var(--color1);
     font-size: 2rem;
     text-align: center; 
     display: flex;
@@ -57,8 +103,8 @@ html{
 }
 
 .item{
-    border: 0.1rem solid red;
-    background-color: rgb(0, 255, 0);
+    border: 0.1rem solid var(--color1);
+    background-color: var(--color4);
     font-size: 2rem;
     text-align: center;
     display: flex;
@@ -70,7 +116,9 @@ html{
     text-align: center;
 }
 
-body{
-    display: grid;
-    justify-content: center;
+button{
+    background-color: var(--color4);
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border: none;
 }

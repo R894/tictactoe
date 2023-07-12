@@ -106,7 +106,7 @@ const displayController = ((gb) => {
         gb.setPlayerOne(player1.value);
         gb.setPlayerTwo(player2.value);
         form.style.display = "none";
-        content.style.display = "block";
+        content.style.display = "flex";
     });
 });
 
